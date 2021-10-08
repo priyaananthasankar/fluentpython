@@ -1,5 +1,6 @@
 def longestPalindrome(s):
     n = len(s)
+    # initialize the memoization array
     dp = [[False for i in range(n)] for j in range(n)]
     length = 0
     lastIndex = 0
