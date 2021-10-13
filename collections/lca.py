@@ -4,6 +4,11 @@ class TreeNode:
         self.left = left
         self.right = right
 
+# Logic: 
+# - Lowest common ancestor of the root node is root itself
+# - Lowest common ancestor of two nodes on the same subtree is the root of the subtree
+# - Using the above intuition check if n1 and n2 lie on different subtrees, if so return root
+# - Else return node of that specific subtree where it was found
 class Solution:
     def lca(self,root,n1,n2):
         if root == None:
