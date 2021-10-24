@@ -1,4 +1,6 @@
 from typing import List
+# Search for element in a 2d matrix where
+# each row is sorted in O(log n) time
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
         r = len(matrix)
