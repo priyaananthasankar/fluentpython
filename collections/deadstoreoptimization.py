@@ -42,25 +42,22 @@ def traverse_graph(instruction_set,item):
         print(stack.pop())
 
 
-
 # Test Case 1
-# instruction_set = [
-#     "add r0,r1 => r2",
-#     "add r1,r2 => r3",
-#     "add r0,r0 => r4"
-# ]
+instruction_set = [
+     "add r0,r1 => r2",
+     "add r1,r2 => r3",
+    "add r0,r0 => r4"]
 
-# registry = ["r3"]
+registry = ["r3"]
 
 # Test Case 2
 instruction_set = [
     "add r0,r1 => r2",
     "add r1,r2 => r3",
     "add r0,r0 => r4",
-    "add r3,r4 => r1"
-]
+    "add r3,r3 => r1" ]
 
-registry = ["r0"]
+registry = ["r3"]
 
 for r in registry:
     traverse_graph(instruction_set,r)
